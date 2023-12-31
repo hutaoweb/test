@@ -1,0 +1,25 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": 
+                [
+                    "--root", "/home/qiangwenjie/datasets",
+                    "--trainer", "ZeroshotCLIP_dense", 
+                    "--dataset-config-file", "configs/datasets/voc2007_partial.yaml",
+                    "--config-file", "configs/trainers/zsclip/rn50.yaml",
+                    "--output-dir", "output/__debug__/ZeroshotCLIP",
+                    "--eval-only"
+                ]
+        }
+    ]
+}
